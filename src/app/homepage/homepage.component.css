@@ -1,0 +1,12 @@
+.container-fluid{
+    display: flex;
+    justify-content: space-between;
+    padding:20px;
+    background-image: linear-gradient(to right,rgb(134, 134, 187),rgb(125, 213, 249),rgb(122, 122, 237));
+    border-bottom: 3px solid black;
+}
+a{
+    margin:15px;
+    text-decoration: none;
+    font-family: cursive;
+}

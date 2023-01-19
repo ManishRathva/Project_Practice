@@ -1,0 +1,15 @@
+<p>from Parent{{name}}</p>
+<h1>hero list</h1>
+<ul>
+    <li *ngFor="let hero of list">
+        {{hero}}
+    </li>
+</ul>
+<p>
+    Name : {{hero.name}} <br> id :{{hero.id}}
+</p>
+<div>
+    <p>Enter Food Name:</p>
+    <input type="text" (keyup.enter)="addToFood(item.value)" #item />
+    <app-child></app-child>
+</div>

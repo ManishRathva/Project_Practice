@@ -1,0 +1,15 @@
+.container-fluid{
+    display: flex;
+    justify-content: space-between;
+    margin-right: 20px;
+    padding: 10px;
+    border-bottom: 2px solid red;
+    background-image:linear-gradient(to right,rgb(71, 71, 241),rgb(240, 191, 191),rgb(135, 220, 253));
+}
+a{
+    margin:20px;
+    color:white;
+}
+.btn{
+    font-weight:700;
+}

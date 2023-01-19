@@ -1,0 +1,24 @@
+/* div{
+    display: inline-block;
+     margin:45px;
+     padding: 10px;
+}
+.container{
+    background-image:linear-gradient(to right,rgb(80, 204, 254),rgb(198, 198, 255),rgb(80, 204, 254));
+}
+aside {
+    float: right;
+    background-color: lightgray;
+    padding: 20px;
+    margin:30px;
+} */
+#commitBox{
+    padding: 4px;
+}
+#commitBox > div{
+    display: flex;
+    justify-content: space-between;
+    padding: 3px;
+    width: 400px;
+    margin: 4px;    
+}

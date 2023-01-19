@@ -1,0 +1,32 @@
+section{
+    display: inline-grid;
+    grid-template-columns:auto auto auto;
+    text-align: center;
+    padding: 4px;
+    border-bottom: 2px solid gray;
+    width: 100%;
+}
+span{
+    width: 20px;
+    height: 15px;
+    display:block;
+}
+.file{  
+    border-radius: 100%;
+    border: 1px solid black;
+}
+.dir{
+    width: 20px;
+    height: 15px;
+    background: orange;
+}
+.dir::after{
+    margin-top: 5px;
+    content: '';
+    display: block;
+    width:5px ;
+    height: 5px;
+    background: orange;
+    position: relative;
+    top:-5px;
+}

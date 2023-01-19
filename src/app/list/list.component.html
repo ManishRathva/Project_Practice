@@ -1,0 +1,7 @@
+<section>
+    <div>
+        <span [class]="item.isFile ? 'file' : 'dir' "></span>
+    </div>
+    <div>{{item.name}}</div>
+    <div>{{item.time | date:'medium' }}</div>
+</section>

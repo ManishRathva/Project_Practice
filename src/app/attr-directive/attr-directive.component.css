@@ -1,0 +1,13 @@
+.box{
+  width: 100px;
+  height: 100px;
+  background-color:rgb(251, 96, 30);
+  border:2px solid rgb(26, 27, 26)
+}
+.border{
+    border: 2px solid black;
+
+}
+.circle{
+border-radius: 50%;
+}

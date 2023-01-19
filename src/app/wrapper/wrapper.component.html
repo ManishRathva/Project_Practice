@@ -1,0 +1,19 @@
+<section>
+    <header>
+        <h3>Repo Name:
+            <ng-content></ng-content>
+        </h3>
+        <div *ngIf="newUpdate.name">{{newUpdate.name}} |  {{newUpdate.msg}}
+        </div>
+    </header>
+<section id="container" *ngIf="newUpdate.history">
+    <div class="row m-5">
+        <div class="col-lg-4"><strong>Image</strong></div>
+        <div class="col-lg-4"><strong>File  Name</strong></div>
+        <div class="col-lg-4"><strong>Time</strong></div>
+    </div>
+<ng-container *ngFor="let update1  of newUpdate.history ">
+    <ng-container *ngTemplateOutlet="listTemplate; context: { $implicit : update1 } "></ng-container>
+</ng-container>
+    </section>
+</section>

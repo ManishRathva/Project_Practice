@@ -1,0 +1,34 @@
+/* table{
+    margin-left:25rem;
+    border: 1px solid black;
+    padding:10px;
+} */
+/* .primary{
+ color:green;
+}
+.warning{
+color:orange;
+}
+.info{
+color:yellow;
+}
+.success{
+color:red;
+} */
+table{
+    margin-left: 25rem;
+    background-image:linear-gradient(to right,rgb(48, 48, 248),rgb(23, 183, 246));
+    color: aliceblue;
+}
+.input-group{
+    margin-bottom:10px;
+    display:block;
+    margin: 2rem;
+}
+input{
+    margin: 10px;
+    border-radius:0.7rem;
+}
+.hide{
+    display: none;
+}

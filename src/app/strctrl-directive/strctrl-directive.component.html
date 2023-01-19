@@ -1,0 +1,63 @@
+<div class="container-fluid bg-primary">
+   <h3>MY PROJECT</h3>
+    <div>
+        <a href="#"><button class="btn btn-info">Menu</button></a>
+        <a href="#"><button class="btn btn-info">Doc</button></a>
+        <a href="#"><button class="btn btn-info">About</button></a>
+        <a href="#"><button class="btn btn-info">Contact-us</button></a>
+    </div>
+    <div class="dropdown">
+        <button class="btn btn-info">dropdown</button>
+        <div class="dropdown-content">
+            <a href="manish">manish</a>
+            <a href="manish">manish</a>
+            <a href="manish">manish</a>
+        </div>
+    </div>
+</div>
+
+<select (change)="handleEvent($event)">
+    <option value="C">C</option>
+    <option value="Cpp">cpp</option>
+    <option value="C#">c#</option>
+    <option value="Java">java</option>
+</select>
+<p>selcted skill is {{selectedSkills}}</p>
+<select (change)="Event($event)">
+    <option value="bca">BCA</option>
+    <option value="mca">MCA</option>
+    <option value="bba">BBA</option>
+    <option value="mba">MBA</option>
+</select>
+<p>Select Course: {{selectedCourse}}</p>
+<ul>
+    <li *ngFor="let name of names">
+        {{name}}
+    </li>
+</ul>
+<ol>
+    <li type="circle" *ngFor="let name of names">
+        {{name}}
+    </li>
+</ol>
+<section>
+<div class="user" *ngFor="let user of user ,let i=index">
+    <p>Serial No: {{i}}</p>
+    <p>Name: {{user.name}}</p>
+    <p>Skill: {{user.skill}}</p>
+    <p>Gender: {{user.gender}}</p>
+    
+    <button class="btn btn-primary" (click)="showData(i)">Show Details/Edit</button>
+</div>
+<hr>
+</section>
+<div class="text-center">
+<section>
+    Name<input type="text"   name="name"(keyup)="setValue($event)"  [value]="currentUser.name"  [disabled]="isDisabled"/>
+    Skill<input type="text"  name="skill" (keyup)="setValue($event)" [value]="currentUser.skill" [disabled]="isDisabled"/>
+    Gender<input type="text" name="gender"(keyup)="setValue($event)"[value]="currentUser.gender"[disabled]="isDisabled" />
+<br>
+    <button class="btn btn-info" (click)="dataEdit()">Edit form</button>
+</section>
+</div>
+<br>

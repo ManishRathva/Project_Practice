@@ -1,0 +1,37 @@
+<p>Name : {{ names | titlecase }} </p>
+<p>Today Date : {{today | date | uppercase }}</p>
+<p>Number :{{ Num | currency:'INR':'INR'}}</p>
+<div class="container-fluid text-center"><b> Pipes Data </b></div>
+<section>
+    <div *ngFor="let data of detail | keyvalue">
+         {{data.key}} | {{data.value}}
+    </div>
+</section>
+
+<section>
+    <div *ngFor="let data of person | keyvalue">
+        {{data.key}} | {{data.value}}
+    </div>
+</section>
+<section>
+    <div *ngFor="let data of persons  | keyvalue ">
+       {{data.key}}  | {{data.value}}
+    </div>
+</section>
+<section>
+    <div *ngFor="let names of name | slice:0:5">
+        {{names}}
+    </div>
+</section>
+    <div>
+        {{name | json}}
+    </div>
+<section>
+    <div>
+        <input type="text" #uname (keyup)= '0' />
+        <br>
+        <br>    
+        <p>Your Name: {{uname.value}} </p>
+        
+    </div>
+</section>

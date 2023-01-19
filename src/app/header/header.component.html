@@ -1,0 +1,92 @@
+
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Document</title>
+    </head>
+    <body>
+
+
+        <!-- <div>
+            <p>TextSize :{{fontSize}}px</p>
+            <input (input)='textSize($event)' type="range" value="10px">
+        </div>
+        <br>
+        <input type="text" (keyup)="typeText($event)">
+        <hr>
+        <p [style.fontSize.px]="fontSize" [class]='textCls1'>{{text}}</p>
+        <select (change)="setColor($event)">
+            <option value="primary">Primary</option>
+            <option value="warning">Warning</option>
+            <option value="info">Info</option>
+            <option value="success">Success</option>
+        </select> -->
+        <section [class.hide]="isDataSubmitted">
+            <table class="shadow-lg bg-white text-center mt-5 bordered border-dark rounded">
+                <div class="input-group">
+                    <tr>
+                        <th colspan="2">LOGIN FORM
+                            <hr style="border-width:0.5rem;color:black;">
+                        </th>
+                    </tr>
+                    <tr>
+                        <th>
+                            <label>Employeee Name</label>
+                        </th>
+                        <td>
+                            <input type="text" name="name"
+                                (keyup)="setValue($event)"
+                                [value]="person.name">
+                        </td>
+                    </tr>
+
+                    <tr>
+                        <th>
+                            <label>Employeee Email</label>
+                        </th>
+                        <td>
+                            <input type="text" name="email"
+                                (keyup)="setValue($event)"
+                                [value]="person.email">
+                        </td></tr>
+
+                    <tr>
+                        <th>
+                            <label>Company Name</label>
+                        </th>
+                        <td>
+                            <input type="text" name="cmp"
+                                (keyup)="setValue($event)"
+                                [value]="person.cmp">
+                        </td>
+                    </tr>
+
+                    <tr>
+                        <th>
+                            <label>Employeee Salary</label>
+                        </th>
+                        <td>
+                            <input type="text" name="salary"
+                                (keyup)="setValue($event)"
+                                [value]="person.salary">
+                        </td> </tr>
+                </div>
+                <button class="btn btn-warning text-center mb-4"
+                    (click)="submitData()">Submit</button>
+            </table>
+        </section>
+        <div class="text-center">
+        <section [class.hide]="!isDataSubmitted">
+            <p>Your Details</p>
+            <p>name: {{person.name}}</p>
+            <p>email: {{person.email}}</p>
+            <p>cmp: {{person.cmp}}</p>
+            <p>salary: {{person.salary}}</p>
+    <button (click)="resetForm()" class="btn btn-primary">Submit one more</button>
+        </section>
+    </div>
+    </body>
+</html>

@@ -1,0 +1,10 @@
+<div class="text-center border mt-4">
+    <p><strong>Product Name : </strong> {{info.name}}</p>
+    <p><strong>Product Qty : </strong> {{info.qty}}</p>
+    <p><strong>Product Price : </strong> {{info.price * info.qty}}</p>
+    <p><button class="btn btn-primary" (click)="addTocart()">
+        {{isAddedtoCart ? 'Remove from':'Add to' }}
+        Cart</button></p>
+    <button (click)="incQty()"class="btn btn-primary">increase Qty</button>&nbsp;
+    <button (click)="decQty()" class="btn btn-primary">Decrease Qty</button>
+</div>
